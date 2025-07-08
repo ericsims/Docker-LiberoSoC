@@ -4,7 +4,8 @@ services:
     environment:
       LM_LICENSE_FILE: 1702@10.0.0.168
       SNPSLMD_LICENSE_FILE: 1702@10.0.0.168
-      DISPLAY: 10.0.0.80:2
+      # DISPLAY: 10.0.0.80:2
+      DISPLAY: $DISPLAY
     ports:
      - 2121:22
     volumes:

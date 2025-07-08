@@ -5,10 +5,9 @@ Docker image for running LiberoSoC
 Under libero-installer, you should have the following files:
 
 ```shell
-powerefi@powerefi-gerrit:~/workspaceLibero/libero_docker$ ls -l libero-installer/
-total 4542140
--rwxr-xr-x 1 powerefi powerefi 3181186330 May 31 01:28 Libero_SoC_v11.9_Linux.bin
--rw-r--r-- 1 powerefi powerefi  993116017 Jun  2 07:43 Libero_SoC_v11_9_SP4_Lin.tar.gz
+ls -l libero-installer/
+-rwxr-xr-x 1 eric eric 3181186330 Jun 26 13:35 Libero_SoC_v11.9_Linux.bin
+-rw-r--r-- 1 eric eric 1046755557 Jun 26 13:33 Libero_SoC_v11_9_SP6_Lin.tar.gz
 ```
 
 ## License server
@@ -25,8 +24,19 @@ Once you have the required files in place, build the image with the 'build.sh' s
 ./build
 ```
 
+## windows
+If you are accessing this container from windows, install xming, and xming-fonts
+
 ## Running Libero
 There are a couple ways you can run Libero.
+
+###
+```shell
+docker compose run --rm libero /usr/local/bin/libero_env.sh libero
+```
+
+
+## without compose
 
 #Note
 On some systems you may need to ensure that the time is synced between the host and the container, otherwise you may get a licensing error.

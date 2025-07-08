@@ -3,6 +3,9 @@
 # start rpcbind, if its not running
 ps -e | grep rpcbind > /dev/null || rpcbind
 
+# disable MIT-SHM extension
+export QT_X11_NO_MITSHM=1
+
 export LIBERO_INSTALLED_DIR=/usr/local/microsemi/Libero_SoC_v11.9/
 
 # export LM_LICENSE_FILE=/license/License.dat

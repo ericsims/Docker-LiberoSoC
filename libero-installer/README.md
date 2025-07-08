@@ -5,9 +5,10 @@ Libero installer archives directory.
 Example:
 
 ```shell
-skeys@skeys:~/LiberoSoC-Docker$ ls libero-installer/ -l
-total 4076480
--rw-r--r-- 1 skeys primarygroup 3181186330 Jun  5 09:46 Libero_SoC_v11.9_Linux.bin
--rw-r--r-- 1 skeys primarygroup  993116017 Jun  5 09:46 Libero_SoC_v11_9_SP4_Lin.tar.gz
--rw-r--r-- 1 skeys primarygroup         67 Jun  6 13:05 README.md
+ls libero-installer/ -l
+total 4130936
+-rw-r--r-- 1 eric eric    2117909 Jun 26 13:26 freetype-2.4.12.tar.gz
+-rwxr-xr-x 1 eric eric 3181186330 Jun 26 13:35 Libero_SoC_v11.9_Linux.bin
+-rw-r--r-- 1 eric eric 1046755557 Jun 26 13:33 Libero_SoC_v11_9_SP6_Lin.tar.gz
+-rw-r--r-- 1 eric eric        373 Jun 26 13:26 README.md
 ```
