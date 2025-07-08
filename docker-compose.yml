@@ -1,0 +1,18 @@
+services:
+  libero:
+    image: docker/liberosoc
+    environment:
+      LM_LICENSE_FILE: 1702@10.0.0.168
+      SNPSLMD_LICENSE_FILE: 1702@10.0.0.168
+      DISPLAY: 10.0.0.80:2
+    ports:
+     - 2121:22
+    volumes:
+      - '../:/root/shared/'
+      - '/run/dbus/system_bus_socket:/run/dbus/system_bus_socket:ro'
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    command: /bin/bash
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    # network_mode: host

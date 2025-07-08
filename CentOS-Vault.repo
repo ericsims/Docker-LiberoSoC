@@ -1,0 +1,18 @@
+# Vault
+[Vault-base]
+name=Vault - CentOS-$releasever - Base
+baseurl=http://vault.centos.org/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-$releasever
+
+[Vault-updates]
+name=Vault - CentOS-$releasever - Updates
+baseurl=http://vault.centos.org/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-$releasever
+
+[Vault-extras]
+name=Vault - CentOS-$releasever - Extras
+baseurl=http://vault.centos.org/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-$releasever
