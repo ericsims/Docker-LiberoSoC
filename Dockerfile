@@ -113,7 +113,7 @@ RUN cd /usr/local/microsemi/Libero_SoC_v11.9/Libero && \
 # # FIXME It would be nice to do this dynamically at runtime. If you don't add the user to the contailer, you get "invalid" user when starting the container.
 RUN useradd -u 287294 skeys
 
-RUN yum install -y motif motif-devel unzip portmap openssh openssh-server openssh-client firefox
+RUN yum install -y motif motif-devel unzip portmap openssh openssh-server openssh-client libXScrnSaver firefox 
 
 # # Fix misc ELF errors, by adding symlinks.
 RUN ln -f -s /lib/ld-linux.so.2 /lib/ld-lsb.so.3
