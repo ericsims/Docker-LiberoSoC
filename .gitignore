@@ -1,0 +1,3 @@
+libero-installer/*
+!libero-installer/README.md
+!libero-installer/freetype-2.4.12.tar.gz
